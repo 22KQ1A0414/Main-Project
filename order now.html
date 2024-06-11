@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>order now</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('order copy.jpg');
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .glass-container {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 200%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <form action="file:///C:/Users/johnp/Desktop/ECE/thanku.html">
+
+<div class="glass-container">
+    <h2>Order Now</h2>
+    
+    <form id="Order Now">
+      <div class="form-group">
+        <label for="Email Id">Email Id</label>
+        <input type="text" class="form-control" id="Email Id" placeholder="Enter Email Id" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="mobile number">Mobile Number</label>
+        <input type="text" class="form-control" id="number" placeholder="Enter Mobile Number" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender" required>
+          <option value="">select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>    
+      </div>
+      <div class="form-group">
+        <label for="Account number">Account Number</label>
+        <input type="Email id" class="form-control" id="account no" placeholder="Enter Account Number" required>
+      </div>
+      <div class="form-group">
+        <label for="product name">Product Name</label>
+        <input type="product type" class="form-control" id="product name" placeholder="Enter Product Name" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="Address">Address</label>
+        <input type="address" class="form-control" id="address" placeholder="Enter Address" required>
+      </div>
+      <div class="remember me">
+        <label><input type="checkbox">Remember me</label>&nbsp;
+       </div><br>
+      <button type="submit" class="btn btn-success">Register</button>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      // Here you can add your login logic using JavaScript
+      // For simplicity, I'll just log the username and password
+      console.log('Username:', username);
+      console.log('Password:', password);
+    });
+  </script>
+  </form>
+</body>
+</html>
